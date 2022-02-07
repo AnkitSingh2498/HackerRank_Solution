@@ -30,7 +30,7 @@ def migratoryBirds(arr):
             key=i
             break
     return key    
-print(migratoryBirds(arr))    
+print(migratoryBirds(arr)) #---> this is main(function call)   
         
 
 # if __name__ == '__main__':
