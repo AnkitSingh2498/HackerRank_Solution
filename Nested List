@@ -1,0 +1,31 @@
+if __name__ == '__main__':
+    main_list=[]
+    score_list=[]
+    name_list=[]
+   
+    for _ in range(int(input())):
+        a=[]
+        name = input()
+        score = float(input())
+        score_list.append(score)
+        a.append(name)
+        a.append(score)
+        main_list.append(a)
+
+    score_list.sort()
+    temp=min(score_list)
+    
+    for i in score_list:
+        if i>temp:
+            temp=i
+            break
+    for i in range(len(main_list)):
+        if main_list[i][1]==temp:
+            names=main_list[i][0]
+            name_list.append(names)
+    name_list.sort()
+    for i in name_list:
+        print(i)        
+            
+                      
+       
